@@ -1,0 +1,9 @@
+<div class="cart-container">
+    <div class="cart" *ngFor="let item of items">
+        <span>{{item.name}}</span>
+        <span>{{item.price}}</span>
+    </div>
+    <div *ngIf="!items.length">
+        <h2> Your cart is empty, please go to the store and continue shopping :)</h2>
+    </div>
+</div>

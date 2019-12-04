@@ -1,0 +1,29 @@
+.detail-container{
+    background-color: ivory;
+    width: 398px;
+    height: 600px;
+    padding: 10px;
+    h2{
+        text-transform: capitalize;
+    }
+    img{
+        height: 300px;
+    }
+    .price{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    button {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 1px solid blue;
+        padding: 5px 10px;
+        &:hover {
+          background-color: blue;
+          color: ivory;
+          cursor: pointer;
+        }
+      }
+}
