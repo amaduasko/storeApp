@@ -1,9 +1,24 @@
 <div class="cart-container">
-    <div class="cart" *ngFor="let item of items">
-        <span>{{item.name}}</span>
-        <span>{{item.price}}</span>
+  <div class="cart" *ngFor="let item of items">
+    <span>{{ item?.name }}</span>
+    <span>{{ item?.price }} &#8381;</span>
+  </div>
+  <form
+    *ngIf="items.length"
+    [formGroup]="checkoutForm"
+    (ngSubmit)="onSubmit(checkoutForm.value)"
+  >
+    <div>
+      <label for="name"> Name </label>
+      <input id="name" type="text" formControlName="name" />
     </div>
-    <div *ngIf="!items.length">
-        <h2> Your cart is empty, please go to the store and continue shopping :)</h2>
+    <div>
+      <label for="address"> Address </label>
+      <input id="address" type="text" formControlName="address" />
     </div>
+    <button class="button" type="submit">Purchase</button>
+  </form>
+  <div *ngIf="!items.length">
+    <h2>Your cart is empty, please go to the store and continue shopping :)</h2>
+  </div>
 </div>

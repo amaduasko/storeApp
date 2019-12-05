@@ -1,6 +1,6 @@
 .store-container {
   background-color: ivory;
-  width: 398px;
+  width: 500px;
   height: 500px;
   padding: 10px;
   h2 {
@@ -9,7 +9,7 @@
     text-decoration: underline;
   }
   .card {
-    h3{
+    h3 {
       margin: 0;
     }
     border-radius: 4px;
@@ -21,8 +21,8 @@
     justify-content: space-between;
     transition: all 0.2s ease-in-out;
   }
-  span{
-      font-weight: 500;
+  span {
+    font-weight: 500;
   }
   button {
     text-transform: uppercase;

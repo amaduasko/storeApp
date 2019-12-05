@@ -36,4 +36,3 @@ export const ITEMS: Item[] = [
     view: '../assets/images/jordan.jpg'
   }
 ];
-export const CARTS: Item[] = [];

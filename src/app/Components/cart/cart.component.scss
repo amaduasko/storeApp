@@ -1,6 +1,6 @@
-.cart-container{
+.cart-container {
   background-color: ivory;
-  width: 398px;
+  width: 500px;
   height: 600px;
   padding: 10px;
   .cart {
@@ -12,8 +12,39 @@
     display: flex;
     justify-content: space-between;
     transition: all 0.2s ease-in-out;
-    span{
-        font-weight: 500;
+    span {
+      font-weight: 500;
+    }
+  }
+  form {
+    border: 1px black solid;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    div {
+      margin: 10px;
+      label {
+        font-weight: bold;
+        display: inline-block;
+        width: 20%;
+      }
+      input {
+        padding-left: 5px;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid blue;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-weight: bold;
+      display: block;
+      margin: auto;
+      &:hover {
+        background-color: blue;
+        color: ivory;
+        cursor: pointer;
+      }
     }
   }
 }
