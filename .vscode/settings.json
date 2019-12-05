@@ -1,0 +1,8 @@
+{
+    "prettier.singleQuote": true,
+    "prettier.useEditorConfig": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+}

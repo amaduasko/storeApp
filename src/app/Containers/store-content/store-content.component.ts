@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StoreService } from '../store.service';
-import { Item } from '../item'
+import { StoreService } from '../../Services/store/store.service';
+import { Item } from '../../Interfaces/item';
 
 @Component({
   selector: 'app-store-content',
@@ -8,16 +8,14 @@ import { Item } from '../item'
   styleUrls: ['./store-content.component.scss']
 })
 export class StoreContentComponent implements OnInit {
-
   Item: Item[];
 
-  constructor(public service: StoreService) { }
+  constructor(public service: StoreService) {}
   getItems(): void {
-    this.service.Items.subscribe(items => this.Item = items)
+    this.service.Items.subscribe(items => (this.Item = items));
   }
 
   ngOnInit() {
-    this.getItems()
+    this.getItems();
   }
-
 }

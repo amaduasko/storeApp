@@ -3,19 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ItemsComponent } from './items/items.component';
-import { StoreContentComponent } from './store-content/store-content.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { StoreContentComponent } from './Containers/store-content/store-content.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ItemDetailComponentComponent } from './item-detail-component/item-detail-component.component';
-import { CartComponent } from './cart/cart.component';
+import { ItemDetailComponentComponent } from './Containers/item-detail-component/item-detail-component.component';
+import { CartComponent } from './Components/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ItemsComponent,
     StoreContentComponent,
     ItemDetailComponentComponent,
     CartComponent
@@ -26,12 +24,11 @@ import { CartComponent } from './cart/cart.component';
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: StoreContentComponent },
-      {path: 'item/:id', component: ItemDetailComponentComponent},
-      {path: 'cart', component: CartComponent}
+      { path: 'item/:id', component: ItemDetailComponentComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
