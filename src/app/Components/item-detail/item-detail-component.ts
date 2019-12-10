@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ITEMS } from '../../Modues/mock-store';
+import { ITEMS } from '../../mocks/mock-store';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../../Services/cart/cart.service';
 @Component({
-  selector: 'app-item-detail-component',
-  templateUrl: './item-detail-component.component.html',
-  styleUrls: ['./item-detail-component.component.scss']
+  selector: 'app-item-detail',
+  templateUrl: './item-detail-component.html',
+  styleUrls: ['./item-detail-component.scss']
 })
-export class ItemDetailComponentComponent implements OnInit {
+export class ItemDetailComponent implements OnInit {
   item;
 
   constructor(
