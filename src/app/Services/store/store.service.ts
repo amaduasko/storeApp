@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Item } from '../../Interfaces/item';
+import { Item } from '../../interfaces/item';
 import { ITEMS } from '../../mocks/mock-store';
 import { Observable, of } from 'rxjs';
 
